@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "GitHub Merge Pull Request Reminder",
+  "version": "1.0",
+  "description": "Merge Pull request creation reminder on GitHub.",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://github.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "48": "icon.png"
+  }
+}
